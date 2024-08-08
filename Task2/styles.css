@@ -1,0 +1,143 @@
+
+
+body {
+    background-color: #2F4F4F; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495E;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #1ABC9C;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px auto; 
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #34495E; 
+    color: #FFFFFF; 
+    border: 2px solid #708090;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.2s;
+    text-align: center;
+    padding: 20px;
+    height: 80px;
+    width: 100px;
+}
+
+.key.active {
+    background-color: #4682B4; 
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.key:hover {
+    background-color: #BDC3C7; 
+}
+
+.letter {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sound-name {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px; 
+    }
+    .key {
+        padding: 15px;
+    }
+    .letter {
+        font-size: 24px;
+    }
+    .sound-name {
+        font-size: 12px;
+    }
+}
+
+.footer {
+    background-color: #34495E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    
+
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #1ABC9C;
+}
